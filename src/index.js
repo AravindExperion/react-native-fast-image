@@ -64,7 +64,7 @@ function FastImageBase({
     )
 }
 
-const FastImageMemo = memo(FastImageBase)
+const FastImageMemo = FastImageBase
 
 const FastImage = forwardRef((props, ref) => (
     <FastImageMemo forwardedRef={ref} {...props} />
